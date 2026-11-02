@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Backroads Navigator: search the indie web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="win">
+<div class="title"><span>🧭 Backroads Navigator - indie web edition</span><span class="wb" aria-hidden="true"><i>_</i><i>□</i><i>x</i></span></div>
+<div class="menu"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>B</u>ookmarks</span><span><u>H</u>elp</span></div>
+<div class="tool" role="search">
+<label for="q">Address:</label>
+<input id="q" class="sunk" type="search" placeholder="search topics or type a web address" autocomplete="off" autofocus>
+<button class="b" id="go">Go</button>
+<button class="b" id="wander">Wander</button>
+<button class="b" id="savedBtn" aria-pressed="false">★ Saved (0)</button>
+<button class="b" id="theme" aria-label="Toggle night mode">Night</button>
+</div>
+<div class="tags" id="tags"></div>
+<div class="mq" aria-hidden="true"><span>*** Welcome to the Backroads! *** Hand-picked homepages, blogs and webrings *** No ads, no trackers, no algorithm *** Sign my guestbook (just kidding) ***</span></div>
+<div class="page sunk">
+<h1>Backroads<small>a search engine for the small web</small></h1>
+<hr>
+<div id="open"></div>
+<div class="meta" id="meta"></div>
+<ul id="list"></ul>
+<details>
+<summary>Submit a site to the index</summary>
+<p>Added sites stay in this browser only.</p>
+<div class="f">
+<input id="nu" class="sunk" placeholder="address, e.g. example.com" aria-label="Site address">
+<input id="nt" class="sunk" placeholder="site name" aria-label="Site name">
+<input id="nd" class="sunk" placeholder="one-line description" aria-label="Description">
+<input id="ng" class="sunk" placeholder="tags, separated by commas" aria-label="Tags">
+<button class="b" id="add" style="justify-self:start">Add to index</button>
+<span id="msg" role="status"></span>
+</div>
+</details>
+<hr>
+<div class="foot">
+<div>You are visitor number<br><span class="ctr" id="ctr">000001</span></div>
+<div class="bt" style="background:#c00">BEST VIEWED IN ANY BROWSER</div>
+<div class="bt" style="background:#060">MADE BY HAND</div>
+<div class="bt" style="background:#009">NO COOKIES</div>
+<div>🚧 This page is always under construction 🚧</div>
+</div>
+</div>
+<div class="status"><div id="st" class="">Done</div><div>Indie web</div></div>
+</div>
+<script src="sites.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
